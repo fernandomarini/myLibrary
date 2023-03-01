@@ -1,0 +1,24 @@
+<p>profile works!</p>
+<main class="main">
+    <div class="main-form">
+        <form class="card" action="">
+            <div class="img-perfil">
+                <img class="foto-perfil" src={{newUser.photo}} alt=""> 
+            </div>
+            <h1>{{newUser.name}} {{newUser.last_name}}</h1>
+            <input  type="text" class="input" placeholder={{newUser.name}}>
+            <input  type="text" class="input" placeholder={{newUser.last_name}}>
+            <input  type="email" class="input" placeholder={{newUser.email}}>
+        </form>
+    </div>
+    <div class="main-form">
+        <form class="card" action="">
+            <h1>Editar datos</h1>
+            <input id="title" type="text" class="input" #newName required placeholder="Nombre">
+            <input id="title" type="text" class="input" #newLastName required placeholder="Apellido">
+            <input id="title" type="email" class="input" #newEmail required placeholder="email">
+            <input id="title" type="url" class="input" #newPhoto required placeholder="url">
+            <button type="button" on-click="newDate( newName, newLastName, newEmail, newPhoto)" class="btn third">Modificar</button>
+        </form>
+    </div>
+</main> 
