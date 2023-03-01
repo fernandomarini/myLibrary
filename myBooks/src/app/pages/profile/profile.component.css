@@ -1,3 +1,20 @@
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../../assets/fondo_myBooks.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;    
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
 .main-form {
     display: flex;
     justify-content: center;
@@ -38,7 +55,18 @@
   
   .card h1 {
     text-decoration: underline;
-      } /* Fin Card */
+    } /* Fin Card */
+
+.foto-perfil {
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 200px 200px 200px 200px;
+        -webkit-border-radius: 200px 200px 200px 200px;
+        -moz-border-radius: 200px 200px 200px 200px;     
+}
+
+
 
   /* INPUT */
   .input {
