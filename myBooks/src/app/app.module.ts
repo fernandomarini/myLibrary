@@ -9,12 +9,13 @@ import { HomeComponent } from './pages/home/home.component';
 import { FormRegisterComponent } from './component/form-register/form-register.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { CardComponent } from './component/card/card.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,  
-    HeaderComponent, FooterComponent, HomeComponent, FormRegisterComponent, RegisterComponent, ProfileComponent
+    HeaderComponent, FooterComponent, HomeComponent, FormRegisterComponent, RegisterComponent, ProfileComponent, CardComponent
   ],
   imports: [
     BrowserModule,
