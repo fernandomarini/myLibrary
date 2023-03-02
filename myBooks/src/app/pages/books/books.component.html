@@ -1,0 +1,44 @@
+<p>books works!</p>
+<div class="main">
+    <section class="section-cards">
+        <ng-container *ngIf="books.length > 0 ; else msjVacio">                
+            <ng-container *ngFor=" let libro of books; let i = index ">
+                <div class="card">
+                    <img src="{{libro.photo}}" alt=""> 
+                    <h1>{{libro.title}}</h1>
+                    <p *ngIf="libro.id_bool.length != 0 ; else msj">
+                        {{libro.id_bool | pipeBooks}} </p>
+                        <ng-template #msj > "0" </ng-template>
+                    <p *ngIf="libro.id_user.leght != 0 ; else msj">
+                        {{libro.id_user}}</p>
+                        <ng-template #msj > "0" </ng-template>
+                    <p>Autor: {{libro.author}}</p>
+                    <p>Tipo: {{libro.type}}</p>
+                    <h3>Precio: $ {{libro.price}}</h3>                         
+                    <button type="button" class="btn third" [ngStyle]="{color: ( i % 2 === 0) ? 'red' : 'blue' }">Comprar</button>
+                </div>
+            </ng-container>                 
+        </ng-container>
+        <ng-template #msjVacio>
+            <div class="card">
+                <h2>Libreria Vacia</h2>
+            </div>
+        </ng-template>   
+    </section>
+
+
+    <div class="main-form">
+        <form class="card" action="">
+            <h1>Añadir libro</h1>
+            <input id="title" type="text" class="input" #newTitle required placeholder="Titulo">
+            <input id="title" type="text" class="input"  #newAuthor required placeholder="Autor">
+            <input id="title" type="url" class="input" #newPhoto required placeholder="Foto">
+            <input id="title" type="text" class="input" #newType required placeholder="Tipo">
+            <input id="title" type="number" class="input" #newPrice required placeholder="Precio">
+            <input id="title" type="number" class="input" #newId_bool required placeholder="Id Libro">
+            <input id="title" type="number" class="input" #newId_user required placeholder="Id Usuario">
+            <button type="button" class="btn third" on-click="dateBooks( newId_bool, newId_user, newTitle, newType,
+                                newAuthor, newPrice, newPhoto)" >Añadir</button>
+        </form>
+    </div>
+</div>

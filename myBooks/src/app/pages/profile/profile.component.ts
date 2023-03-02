@@ -11,6 +11,7 @@ export class ProfileComponent {
   public newUser: User
 
   constructor(){
+    
     this.newUser = new User( 1, "Fernando" , "Marini" , "fer.ms114@gmail.com" , "../../../assets/fm.jpg" , "fer123" )
   };
 
