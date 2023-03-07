@@ -7,11 +7,7 @@ export class PipeBooksPipe implements PipeTransform {
 
   transform(value: string ): string {
 
-    let codigo: string;
-
-    codigo = 'Ref-' + value ;
-
-    return codigo;
+    return 'Ref-' + value ;
   }
 
 }

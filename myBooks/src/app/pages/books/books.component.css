@@ -1,8 +1,8 @@
 
 .main {
-    height: auto;
-    background-image: url("../../../assets/fondo_myBooks.jpg");
-    /* background-color: rgb(53, 127, 117); */
+   /*  height: 100vh; */
+   /*  background-image: url("../../../assets/fondo_myBooks.jpg"); */
+    background-color: rgb(53, 127, 117);
     background-size: cover;
     background-repeat: repeat;
     background-position: center center;
@@ -73,6 +73,11 @@
   .card h1 {
     text-decoration: underline;
       } /* Fin Card */
+
+  .card-vacia{
+    margin-top: 12vh;
+    height: 10vh;
+  }
 
   /* INPUT */
   .input {
