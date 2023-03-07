@@ -11,12 +11,21 @@ import { RegisterComponent } from './pages/register/register.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { BooksComponent } from './pages/books/books.component';
 import { PipeBooksPipe } from './pipes/pipe-books.pipe';
+import { CardComponent } from './component/card/card.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,  
-    HeaderComponent, FooterComponent, HomeComponent, FormRegisterComponent, RegisterComponent, ProfileComponent, BooksComponent, PipeBooksPipe
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    FormRegisterComponent,
+    RegisterComponent,
+    ProfileComponent,
+    BooksComponent,
+    PipeBooksPipe,
+    CardComponent
   ],
   imports: [
     BrowserModule,

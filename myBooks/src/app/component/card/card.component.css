@@ -1,0 +1,139 @@
+
+.main {
+    height: auto;
+    background-image: url("../../../assets/fondo_myBooks.jpg");
+    /* background-color: rgb(53, 127, 117); */
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.section-cards {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+    box-sizing: border-box;
+    width: 20vw;
+    height: 75vh;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;  
+    margin-top: 5vh;  
+    margin-left: 2vw;
+    margin-right:2vw;
+  }
+
+  .card img {
+    height: 30vh;
+    margin-top: 1vh;
+  }
+
+  .card p {
+    height: 65vh;
+    width: 25vh;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  } 
+  
+  .card h1 {
+    text-decoration: underline;
+} /* Fin Card */
+
+
+/*   BOTON */
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid rgb(5, 110, 96);
+    border-radius: 0.6em;
+    color: rgb(5, 110, 96);
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;  
+      
+  }
+
+  .parBtn {
+    color: red;
+  }
+
+  .imparBtn {
+    color: blue;
+  }
+
+
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+  
+  .third {
+    border-color: rgb(5, 110, 96);
+    color: #fff;
+    box-shadow: 0 0 40px 40px rgb(5, 110, 96) inset, 0 0 0 0 rgb(5, 110, 96);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .third:hover {
+    box-shadow: 0 0 10px 0 rgb(5, 110, 96) inset, 0 0 10px 4px rgb(5, 110, 96);
+    color: rgb(5, 110, 96);
+  } /* Fin Boton */
+
+/* BOTON X */
+.btn-x {
+  margin-top: 5px;
+    height: 3vh;
+    background-color: white;
+    color: red;
+    width: 4vw;
+    border: white;
+    border-radius: 200px 200px 200px 200px;
+        -webkit-border-radius: 200px 200px 200px 200px;
+        -moz-border-radius: 200px 200px 200px 200px;
+}
+
+.btn-x:hover {
+    cursor: pointer;
+    color: white;
+    background-color: red;
+
+}

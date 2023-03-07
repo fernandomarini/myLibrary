@@ -8,8 +8,8 @@ export class Book {
     public price: number
     public photo: string
 
-    constructor( id_bool: number, id_user: number, title: string, type: string, author: string,
-                 price: number, photo: string){
+    constructor(  title: string, type: string, author: string,
+                 price: number, photo: string, id_bool: number = 0, id_user: number = 0 ){
 
         this.id_bool = id_bool;
         this.id_user = id_user;

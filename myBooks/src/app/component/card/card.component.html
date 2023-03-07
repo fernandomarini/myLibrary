@@ -1,1 +1,15 @@
-<p>card works!</p>
+
+<div class="card">
+    <button type="button" class="btn-x" (click)="deleteBook()" > delete </button>
+    <img src="{{bookPadre.photo}}" alt=""> 
+    <h1> {{bookPadre.title}}</h1>
+    <p> {{bookPadre.id_bool | pipeBooks  }} </p>        
+    <p> {{bookPadre.id_user}}</p>           
+    <p>Autor: {{bookPadre.author}}</p>
+    <p>Tipo: {{bookPadre.type}}</p>
+    <h3>Precio: $ {{bookPadre.price}}</h3>                         
+    <button type="button"  class="btn third" [ngClass]=" btnpar ? 'parBtn' : 'imparBtn' ">Comprar</button>
+</div>
+
+
+
